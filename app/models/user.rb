@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :reactions
+  has_many :chat_messages
+  has_many :chat_room_users
 
   mount_uploader :img_name, ImgNameUploader
 
